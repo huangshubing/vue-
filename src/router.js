@@ -5,6 +5,9 @@ import Home from "./views/Home/Home.vue";
 import User from "./views/User/User.vue";
 import Roles from "./views/Roles/Roles.vue";
 import Rights from "./views/Rights/Rights.vue";
+import Goods from "./views/Goods/Goods.vue";
+import Categories from "./views/Goods/Categories.vue";
+import GoodsAdd from "./views/Goods/GoodsAdd.vue";
 
 Vue.use(Router);
 
@@ -21,7 +24,7 @@ const router = new Router({
         {
           // 如果给path加上/  变成/user   那么访问的时候直接 使用 /user
           // 如果不加/  那么访问的时候直接  /home/user
-          path: "/user",
+          path: "/users",
           component: User
         },
         {
@@ -31,6 +34,18 @@ const router = new Router({
         {
           path: "/rights",
           component: Rights
+        }, 
+        {
+          path: "/goods",
+          component: Goods
+        },
+        {
+          path: "/categories",
+          component: Categories
+        },
+        {
+          path: "/goods-add",
+          component: GoodsAdd
         }
       ]
     },
